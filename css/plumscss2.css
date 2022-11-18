@@ -1,0 +1,283 @@
+@font-face {
+	font-family:Bungee;
+	src: url("../fonts/Bungee-Regular.otf") format("opentype");
+  }
+  
+* {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	/* background-color: darkgray; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    font-family: Bungee;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+h2 {
+	font-family:Bungee;
+	margin:0;
+	font-size: 40px;
+}
+
+h3 {
+    font-family: Bungee;
+    margin: 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h4 {
+	font-family:Bungee;
+	margin:0;
+	font-size: 40px;
+}
+
+h5 {
+	font-family:Bungee;
+	margin:0;
+	font-size: 40px;
+}
+
+h6{
+	font-family:Bungee;
+	margin:0;
+	font-size: 40px;
+}
+
+body{
+    /* background: linear-gradient(90.22deg, #FF99AC 0%, #6756B3 100%); */
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+#wrapper {
+    background-image: linear-gradient(43deg, #ffffff, #ffffff);
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90.22deg, #FF99AC 0%, #6756B3 100%);
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.75));
+    align-items: center;
+    height: 120px;
+    /* position: fixed; */
+	transition:0.5s;
+    padding: 10px 2%;
+}
+
+
+
+
+#headerlogoDiv{
+    border-bottom: 0px solid rgba(0,0,0,0);
+    border-radius: 70px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#headerlogoDiv:hover{
+    transition: 0.8s;
+    border-bottom: 100px solid white;
+}
+
+.headerLogoPicture {
+    width: 90px;
+    height: 90px;
+    margin: 7px 0px 0px 0px;
+}
+
+#logoHead{
+	color:white;
+	width:200px;
+	height:100px;
+	text-align: center;
+}
+
+.headerSection {
+    width: 30%;
+	min-width:300px;
+    display: flex;
+}
+
+#headernav {
+    width: 45%;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* float: right; */
+    max-width: 720px;
+	min-width: 500px;
+}
+
+ul{
+    display: flex;
+    /* padding: 5px; */
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;}
+
+ul li{
+    width: 15%;
+    list-style: none;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+ul li:hover{
+    transition: 0.3s;
+    background: white;
+}
+
+.navbarButton{
+    font-variant: small-caps;
+	color:white;
+
+}
+
+.navbarButton:hover {
+	color:#6756b3;
+
+}
+
+/* li{
+	float: left;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    width: 16.5%;
+    height: 35px;
+    padding: 1%;
+    align-content: center;
+} */
+
+.footer{
+	width: 100%;
+	height: 330px;
+	background: #383838;
+	box-shadow: inset 0px 4px 10px #000000;
+}
+
+#footerLogoDiv{
+
+}
+
+.footerLogoPicture {
+    width: 200px;
+    height: 200px;
+    margin: 7px 0px 0px 0px;
+}
+
+.main{
+	background-color: white;
+	background: linear-gradient(90.22deg, #FF99AC 0%, #6756B3 100%);
+	width:100%;
+	min-height:800px;
+}
+
+
+
+#blogpost{
+	padding:5px;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#login {
+    /* display: inline-grid; */
+    text-align: center;
+    /* margin: 100px auto 0; */
+    padding: 5% 0% 5% 0%;
+    width: 100%;
+    justify-items: center;
+
+}
+
+#adminmenu {
+	padding-left: 0;
+}
+
+#adminmenu li {
+	float: left;
+	list-style: none;
+	margin-right: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.error {
+	padding: 0.75em;
+	margin: 0.75em;
+	border: 1px solid #990000;
+	max-width: 400px;
+	color: #990000;
+	background-color: #FDF0EB;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+}
+
+
+a {
+	color: #ff8787e8;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:hover {
+	color:#e90b0bc4;
+	transition: 0.3s;
+}
+
+#navbuttons {
+	color: #ff8787e8;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+form input {
+	border: 1px solid #999999;
+	border-bottom-color: #cccccc;
+	border-right-color: #cccccc;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	margin: 2px;
+}
+
+/******************************************************************************************************************/
+
+@media only screen and (max-width: 600px) {
+
+h1 {
+	font-size:32px;
+}
+
+.header {
+	background: lightblue;
+
+}
+
+
+
+}
