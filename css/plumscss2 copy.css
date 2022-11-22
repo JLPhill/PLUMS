@@ -14,7 +14,6 @@
   }
   
 * {
-    border:none;
 	box-sizing:border-box;
 	margin:0;
 	padding:0;
@@ -46,7 +45,7 @@ h3 {
     font-family: Bungee;
     margin: 0px;
     font-size: 18px;
-    letter-spacing: 0.05em;
+    letter-spacing: 1px;
 }
 
 h4 {
@@ -82,7 +81,7 @@ body{
 }
 
 #header {
-    
+    float: left;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -175,7 +174,7 @@ body{
 }
 
 /* li{
-	
+	float: left;
     text-align: center;
     list-style: none;
     display: grid;
@@ -186,7 +185,7 @@ body{
 } */
 
 .footer{
-    
+    float:left;
     width: 100%;
     height: 330px;
     background: #383838;
@@ -271,6 +270,7 @@ body{
 }
 
 .main{
+    float: left;
     background-color: white;
     background: linear-gradient(90.22deg, #FF99AC 0%, #6756B3 100%);
     background-image: url("../images/background.png");
@@ -281,14 +281,13 @@ body{
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    overflow-y: auto;
 }
 
 
 /*INDEX PAGE*****************************************************************************************************************/
 
 #homeDivMain{
-    /*  */
+    /* float: left; */
     /* display: block; */
     padding: 120px 0px 0px 0px;
     width: 100%;
@@ -338,13 +337,6 @@ body{
     margin: 15px 0px;
     border: none;
     border-radius: 3px;
-    transition:0.5s;
-}
-
-#homeDiv2Btn:hover{
-    /* background: pink; */
-    text-decoration: 4px underline;
-    transition: 0.5s;
 }
 
 #homeDiv2Link{
@@ -359,15 +351,12 @@ body{
 
 /*QUIZ PAGE*****************************************************************************************************************/
 
-#quizDivMain{   
-    margin: 120px 0px 50px 0px;
-    /* padding: 120px 0px 50px 0px; */
-    /* min-height: 85vh; */
+#quizDivMain{
+    float:left;
+    padding: 120px 0px 0px 0px;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+    min-height: 100vh;
+    height: fit-content;}
 
 #progressBarDiv{
     display: flex;
@@ -387,16 +376,16 @@ body{
     text-align: center;
     letter-spacing: 0.05em;
     color: #6756B3;
-    margin: 10px 20px 10px 0px;
+    
+    margin: 10px;
 }
 
 #progressPercentage{
     display: flex;
-    width: 45px;
     align-items: center;
     text-align: center;
     color: #767676;
-    /* margin: 0px 5px 0px 10px; */
+    margin: 0px 5px 0px 10px;
 }
 
 #progressStatusDiv{
@@ -418,11 +407,11 @@ body{
 }
 
 #progressEmpty{
-    width: 40%;
-    max-width: 800px;
+    width: 45%;
     height: 8px;
     background: #D9D9D9;
     border-radius: 3px;
+
     margin: 10px;
 }
 
@@ -435,423 +424,22 @@ body{
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-#questionSection{
-    padding: 50px;
-    display: flex;
-    width: 100%;
-    height: 600px;
-    background: #ffffff;
-    /* min-height: 60vh; */
-    align-items: center;
-    justify-content: center;
-}
-
 #questionDiv{
-    border-radius: 3px;
-    width: 75%;
-    max-width: 1200px;
-    min-width: 600px;
-    height: 100%;
-    background: rgb(56 56 56);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-    /* min-height: 100vh; */
-}
-
-#questionL{
-    display: inline-flex;
-    width: 50%;
-    height: fit-content;
-    min-height: 100%;
-    /* padding: 50px; */
-    flex-direction: column;
-    padding: 0px 0px 0px 30px;
-    align-items: flex-start;
-}
-
-#questionType{
-    height: 60px;
+    float:left;
     width: 100%;
-    padding: 10px 0px;
-}
-
-#questionSpace{
-    height: 400px;
-    width: 100%;
-    background: white;
-    font-family: 'Cabin';
-
-    font-size: 24px;
-
-    letter-spacing: 0.05em;
-    color: #383838;
-}
-
-#answer{
-    width: 95%;
-    padding: 10px 10px;
-    margin: 2.5%;
-    display: inline-block;
-    border: none;
-    background: #e0e0e0;
-    border-radius: 3px;
-    /* box-sizing: border-box; */
-}
-
-#answer:focus-visible{
-    background: #c5fdea;
-    /* border: red; */
-    outline: none;
-}
-
-
-#questionR{
-    display: inline-flex;
-    width: 50%;
     height: fit-content;
-    min-height: 100%;
-    float: right;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 50px 50px 50px;
-    flex-direction: column;
+    background: #a0f4ff;
+    min-height: 100vh;
 }
 
-#questionText{
-    text-align: justify;
-}
 
-#saveAnswerLink {
-    display: flex;
-    width: 150px;
-    height: 50px;
-    color: white;
-    background: #6756B3;
-    border-radius: 3px;
-    font-family: 'Bungee';
-    letter-spacing: 0.05em;
-    align-items: center;
-    justify-content: center;
-}
 
-#saveAnswerLink:hover {
-    color: #85ffd6;
-    transition:0.3s;
-}
 
-#saveAnswerLink:active {
-    color: #ffffff;
-    background: #ff99ac;
-    transition: 0.3s;
-}
-
-.arrowLink{
-    display: flex;
-    width: 75px;
-    margin: 0px 25px;
-    height: 75px;
-    min-width: 50px;
-    background: #383838;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-    border-radius: 3px;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrowLink:hover{
-    filter: brightness(1.5);
-    transition:0.3s;
-}
-
-.arrowImage{
-    width:20px;
-}
 
 /*SCORES PAGE*****************************************************************************************************************/
-#scoresDivMain{   
-    margin: 120px 0px 50px 0px;
-    /* padding: 120px 0px 50px 0px; */
-    /* min-height: 85vh; */
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
 
 
-#completeProgressBarDiv{
-    display: flex;
-    width: 100%;
-    height: 65px;
-    background: #F5F5F5;
-    align-items: center;
-    justify-content: center;
-}
-
-#progressIndustry{
-    font-family: 'Bungee';
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #6756B3;
-    margin: 10px 20px 10px 0px;
-}
-
-#completeProgressPercentage{
-    display: flex;
-    width: 45px;
-    align-items: center;
-    text-align: center;
-    color: #767676;
-    /* margin: 0px 5px 0px 10px; */
-}
-
-#completeProgressStatusDiv{
-    width: 180px;
-    height: 31px;
-    background: #6756B3;
-    color: #85ffd6;
-    border-radius: 3px;
-    font-family: 'Bungee';
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-#progressEmpty{
-    width: 40%;
-    max-width: 800px;
-    height: 8px;
-    background: #D9D9D9;
-    border-radius: 3px;
-    margin: 10px;
-}
-
-#completeProgressFill{
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(100.09deg, #6756B3 0%, #77B2C6 54.69%, #85FFD6 100%);
-    border-radius: 3px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-#scoresSection{
-    padding: 50px;
-    display: flex;
-    width: 100%;
-    height: 600px;
-    background: #ffffff;
-    /* min-height: 60vh; */
-    align-items: center;
-    justify-content: center;
-    
-}
-
-#scoresDiv{
-    border-radius: 3px;
-    width: 90%;
-    max-width: 1400px;
-    min-width: 600px;
-    height: 100%;
-    background: rgb(56 56 56);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-    border-image: linear-gradient(100.09deg, #6756B3 0%, #77B2C6 54.69%, #85FFD6 100%);
-    border-width: 10px;
-    border-style: solid;
-    border-image-slice: 1;
-}
-
-#scoresHeader{
-    font-size: 26px;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-#scoresSectionHolder{
-    display: flex;
-    flex-direction: row;
-    padding: 0px 40px;
-    height: 75%;
-    justify-content: space-between;
-}
-
-#scoresSection1{
-    display: inline-flex;
-    width: 30%;
-    height: fit-content;
-    min-height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    flex-direction: column;
-    background: white;
-    border: #6756B3;
-    border-width: 5px;
-    border-style: solid;
-    border-image-slice: 1;
-
-}
-
-#scoresSection2{
-    
-    display: inline-flex;
-    width: 30%;
-    height: fit-content;
-    min-height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    flex-direction: column;
-    background: white;
-    border-width: 5px;
-    border-style: solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(100.09deg, #6756B3 0%, #77B2C6 54.69%, #85FFD6 100%);
-}
-
-#scoresSection3{
-    display: inline-flex;
-    width: 30%;
-    height: fit-content;
-    min-height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;    flex-direction: column;
-    background: white;
-    border: #85ffd6;
-    border-width: 5px;
-    border-style: solid;
-    border-image-slice: 1;
-}
-
-.scoresSectionSpan{
-    width: 100%;
-    height: fit-content;
-}
-
-.scoresText{
-    font-size: 14px;
-}
-
-.viewMoreLink {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    color: #ffffff;
-    background: #383838;
-    border-radius: 3px;
-    font-family: 'Bungee';
-    letter-spacing: 0.05em;
-    align-items: center;
-    justify-content: center;
-}
-
-.viewMoreLink:hover {
-    color: white;
-    transition:0.3s;
-}
-
-.viewMoreLink:active {
-    color: #ffffff;
-    background: #ff99ac;
-    transition: 0.1s;
-}
-
-#sendResultSection {
-    display: flex;
-    height: 15%;
-    align-items: center;
-    padding: 0px 40px 0px 0px;
-    justify-content: flex-end;
-}
-
-#emailLabel{
-    margin: 5px 15px;
-}
-
-#email{
-    width: 25%;
-    padding: 12px 10px;
-    /* margin: 5px; */
-    display: inline-block;
-    border: none;
-    background: white;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
-    /* box-sizing: border-box; */
-}
-
-#email:focus-visible{
-    background: #85ffd6;
-    outline: none;
-}
-
-#sendButton{
-    display: flex;
-    width: 150px;
-    height: 40px;
-    color: #383838;
-    background: #85ffd6;
-    border-radius: 3px;
-    font-family: 'Bungee';
-    letter-spacing: 0.05em;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 0px 0px -5px;
-    transition: 0.3s;
-}
-
-#sendButton:active{
-    background:#67c8a8 ;
-    transition:0.1s;
-}
-
-/*LOGIN******************************************************************************************************************/
-
-#loginHeader {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(90.22deg, #FF99AC 0%, #6756B3 100%);
-    filter:none;
-    align-items: center;
-    height: 120px;
-    /* position: fixed; */
-    transition: 0.5s;
-    padding: 10px 2%;
-    z-index: 9;
-}
-
-#loginDivMain{   
-    background: linear-gradient(90.22deg, #FF99AC 0%, #6756B3 100%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#loginDiv{
-    width: 500px;
-    height: 400px;
-}
 /*OTHER STUFF******************************************************************************************************************/
-
-.whiteWords{
-    color:white;
-    font-size:16px;
-}
-
-
 
 .clear {
 	clear: both;
