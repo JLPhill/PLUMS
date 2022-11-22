@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Quiz - PLUMS</title>
+    <link rel="stylesheet" href="./css/plumscss2.css">
+</head>
+<body>
+
+	<div id="wrapper">
+    <div id="header" class="sticky">
+
+      <div class="headerDiv">
+        <a id="headerlogoLink" href="index.html"><img src="./images/logolight.png" class="headerLogoImage" alt="logo"></a>
+        <a id="logoHeadLink" href="index.html"><h1>PLUMS</h1></a>
+      </div>
+
+    <nav id="headerNav"> 
+			<ul>				
+				<li><a href="index.html" class="navbarButton"><h3>Home</h3></a></li>  
+				<li><a href="quiz.html" class="navbarButton"><h3>Quiz</h3></a></li>
+				<li><a href="scores.html" class="navbarButton"><h3>Scores</h3></a></li>
+				<li><a href="login.html" class="navbarButton"><h3>Login</h3></a></li>
+				<li><a href="index.html" class="navbarButton"><h3>About</h3></a></li>
+			</ul>
+		</nav>
+
+    </div>
+	
+    <main class="main">
+      <div id="scoresDivMain">
+        <div id="completeProgressBarDiv">
+          <div id="progressIndustry">
+            INDUSTRY: IT - WEB DEVELOPMENT
+          </div>
+          <div id="completeProgressPercentage">
+            <h4>100%</h4>
+          </div>
+          <div id="progressEmpty">
+            <div id="completeProgressFill"></div>
+          </div>
+          <div id="completeProgressStatusDiv">
+          QUIZ COMPLETE!
+          </div>
+        </div>
+
+        <div id="scoresSection">
+          <div id="scoresDiv">
+            <h3 id="scoresHeader">SCORE CARD</h3>
+            
+            <div id="scoresSectionHolder">
+              <section id="scoresSection1">
+                <span class="scoresSectionSpan">
+                  <h3 class="scoresText">Strong Points:</h3>
+                  <h4>
+                    HTML<br>
+                    CSS<br>
+                    Javascript<br>
+                    Python <br>
+                  </h4>
+                </span>
+                <a class="viewMoreLink" href="scores.html">More..</a>
+              </section>
+
+              <section id="scoresSection2">
+                <span class="scoresSectionSpan">
+                  <h3 class="scoresText">Areas of Improvement:</h3>
+                  <h4>             
+                  PHP basics<br>
+                  SQL basics<br>
+                  WordPress<br>
+                  SEO<br>
+                 </h4>     
+                </span>
+                <a class="viewMoreLink" href="scores.html">More..</a>
+              </section>
+
+              <section id="scoresSection3">
+                <span class="scoresSectionSpan">
+                  <h3 class="scoresText">Recommended Courses:</h3>
+                  <h4>
+                  Certificate IV (IT - Web Development)
+                  </h4>
+                </span>
+                <a class="viewMoreLink" href="scores.html">More..</a>
+              </section>
+            </div>
+            
+            <div id="sendResultSection">
+              <label id="emailLabel" for="name"><h4 class="whiteWords" >Email:</h4></label>
+              <input type="email" id="email" name="email" placeholder="Type your email here..">
+              <input id="sendButton" type="submit" value="Send!">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div id="footerArrowDiv"><a id="footerArrowLink" href=#wrapper><img id="footerArrowImage" src="./images/footerarrow.png" alt="back to top"></a></div>
+      <div id="footerLogoDiv"><a id="footerLogoLink" href="index.html"><img src="./images/logolightlower.png" class="footerLogoImage" alt="logo"></a></div>
+      <nav id="footerNav"> 
+        <ul>				
+          <li><a href="index.html" class="footerNavLink"><h6>Terms & Conditions</h6></a></li>  
+          <li><a href="quiz.html" class="footerNavLink"><h6>Contact Us</h6></a></li>
+          <li><a href="scores.html" class="footerNavLink"><h6>Privacy Policy</h6></a></li>
+        </ul>
+      </nav>
+      <div id="copyrightDiv"><h6>© 2022 PLUMS</h6></div>
+    </footer>
+
+	</div>
+
+  <script src="js/plumsjs.js"></script>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Home - PLUMS</title>
+    <title>Quiz - PLUMS</title>
     <link rel="stylesheet" href="./css/plumscss2.css">
 </head>
 <body>
@@ -29,26 +29,48 @@
     </div>
 	
     <main class="main">
-      <div id="homeDivMain">
-        <div id="homeDiv1">
-          <img src="./images/homeGraphic.png" id="homeImage" alt="logo">
-        </div>
-        <div id="homeDiv2">
-          <h2>WELCOME TO PLUMS</h2>
-          <div id="homeDiv2Desc">
-            <h4>Hello There! Please Level Up My Skills (PLUMS for short) is an aptitude test for students or aspiring enrolments to test their might. This amazing website serves to help you determine your overall knowledge and skill level which will enable you to pick a suitable course according to your personal abilities. 
-              <br> <br>
-            As many tafe courses have pre-requisites before enrolment, it is important to be sure that you’re picking the right level of study. Entering a new industry is challenging enough as is, being able to understand where you stand in terms of proficiency will help you figure out your next step in your journey to self-improvement.
-              <br> <br>
-            If you’re feeling up to it, have a look at our quiz section and pit yourselves against the tides of angry questions ready for battle. Its time to LEVEL UP.
-            </h4>
+      <div id="quizDivMain">
+        <div id="progressBarDiv">
+          <div id="progressIndustry">
+            INDUSTRY: IT - WEB DEVELOPMENT
           </div>
-          <button id="homeDiv2Btn"><a id="homeDiv2Link" href="quiz.html">PLEASE LEVEL UP MY SKILLS!</a></button>
+          <div id="progressPercentage">
+            <h4>25%</h4>
+          </div>
+          <div id="progressEmpty">
+            <div id="progressFill"></div>
+          </div>
+          <div id="progressStatusDiv">
+            IN PROGRESS
+          </div>
         </div>
+
+        <div id="questionSection">
+          <a class="arrowLink" href="index.html"><image class="arrowImage" src="./images/leftArrow.png"></image></a>
+          <div id="questionDiv">
+            <section id="questionL">
+              <span id="questionType"><h3 class="whiteWords">Question 3 - Python</h3></span>
+              <p id="questionSpace"> count = 1 <br>while count <= 5: <br> &nbsp; &nbsp; &nbsp;print(count, end = " ")
+              <br>
+              <input type="text" id="answer" name="answer" placeholder="Type your answer here..">
+              </p>
+
+            </section>
+
+            <section id="questionR">
+              <span id="questionText">
+                <h4 class="whiteWords">Please inspect the chunk of PYTHON code shown above. Currently it will generate an infinite loop, please add code to the textbox to correct this error.</h4>
+
+              </span>
+              <a id="saveAnswerLink" href="scores.html">Save Answer</a>
+            </section>
+          </div>
+          <a class="arrowLink" href="scores.html"><image class="arrowImage" src="./images/rightArrow.png"></image></a>
+        </div>
+
       </div>
     </main>
-
-
+    
     <footer class="footer">
       <div id="footerArrowDiv"><a id="footerArrowLink" href=#wrapper><img id="footerArrowImage" src="./images/footerarrow.png" alt="back to top"></a></div>
       <div id="footerLogoDiv"><a id="footerLogoLink" href="index.html"><img src="./images/logolightlower.png" class="footerLogoImage" alt="logo"></a></div>
