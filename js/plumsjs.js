@@ -23,11 +23,11 @@ function myFunction2() {
   var currentScrollPos = window.pageYOffset;
 //   if (window.innerWidth > 768 && prevScrollpos > currentScrollPos) 
 
-  if (window.innerWidth > 768 && currentScrollPos ==0) {
+  if (window.innerWidth > 1 && currentScrollPos <10) {
     document.getElementById("header").style.height = "120px";
 	// document.getElementById("logopicture").style.removeProperty('height');
 	// document.getElementById("logoposition").style.marginTop = "75px";
-  } else if  (window.innerWidth > 600){
+  } else if  (window.innerWidth > 1){
 	document.getElementById("header").style.height = "100px";
 	// document.getElementById("logopicture").style.height = "80px";
 	// document.getElementById("logoposition").style.marginTop = "20px";
